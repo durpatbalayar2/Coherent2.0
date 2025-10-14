@@ -1,0 +1,92 @@
+@font-face {
+  font-family: wow;
+  src: url(./Bad\ Hunters.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  section {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    flex-grow: 1;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    
+  }
+
+  section:hover {
+    flex-grow: 2.5;
+  }
+
+  #box {
+    position: absolute;
+    height: 50%;
+    left: -100%;
+    bottom: -10%;
+    transition: all ease 1.2s;
+   padding-left: 40px;
+   
+    width: 100%;
+   
+  }
+
+  #box h5 {
+    font-family: wow;
+    font-weight: 700;
+    font-size: 100px;
+    color: transparent;
+
+    background-image: url(https://i.pinimg.com/originals/9d/99/63/9d996392b21243a492fec931add8e581.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+    background-position: center;
+  }
+
+  section:hover #box {
+    left: 0%;
+   
+    
+  }
+
+  section:nth-child(1) {
+    background-image: url(https://i.pinimg.com/736x/73/05/5f/73055f83fa055d21196935dad061b22a.jpg);
+  }
+
+  section:nth-child(2) {
+    background-image: url(https://i.pinimg.com/1200x/64/b8/bf/64b8bfb78efaa647e10cad8f59531473.jpg);
+  }
+
+  section:nth-child(3) {
+    background-image: url(https://i.pinimg.com/736x/3c/d7/b6/3cd7b62326afa91879ef964c17f343ee.jpg);
+  }
+
+  section:nth-child(4) {
+    background-image: url(https://i.pinimg.com/736x/69/a1/6a/69a16ab0dabd56d845630709028df70b.jpg);
+  }
+
+  section:nth-child(5) {
+    background-image: url(https://i.pinimg.com/1200x/88/c9/da/88c9da8c09cfc33fcf81f45919f8e909.jpg);
+  }
+}
